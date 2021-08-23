@@ -5,6 +5,7 @@ def encrypt(text, shift):
     encrypted_text = list(range(len(text)))
     alphabet = string.ascii_lowercase # 'abcdefghijklmnopqrstuvwxyz'
     first_half = alphabet[:shift]
+    
     second_half = alphabet[shift:]
     shifted_alphabet = second_half + first_half
     
